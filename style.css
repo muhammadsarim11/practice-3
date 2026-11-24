@@ -7,12 +7,12 @@
 
 
 .page1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
 .page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -96,15 +96,18 @@ span{
 
 .page2-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    column-gap: 30px;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 20px;
     row-gap: 30px;
+/* background-color: rgb(5, 4, 3); */
+    /* align-items: center; */
 }
 
 
 .about-content{
-    height: 350px;
+    /* height: 350px; */
 width: 550px;
 padding: 30px 30px;
 background-color: gainsboro;    
@@ -139,7 +142,8 @@ border: 1px solid black;
 
 .page3-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    column-gap: 30px;
 align-items: center;
 height: 500px;
 flex-wrap: wrap;
@@ -160,4 +164,16 @@ margin-top: 20px;
 .heading h1{
     text-align: center;
     font-size: 45px;
+}
+
+
+
+
+@media screen and (max-width:500px) {
+ 
+    .page2-container{
+        width: 100%
+    }
+ 
+    
 }
